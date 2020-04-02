@@ -94,12 +94,14 @@ hr {
     margin: 120px auto 0 auto;
     font-size: 110px;
     color: #eaf078;
+    text-shadow: 5px 5px rgba(83, 94, 31, 0.404);
 }
 
 #home h2 {
     margin: 0 auto 0 auto;
     font-size: 25px; 
-    color: #d6db74;   
+    color: #d6db74;
+    text-shadow: 2px 2px rgba(122, 120, 113, 0.411);   
 }
 
 #home img {
