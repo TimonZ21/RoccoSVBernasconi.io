@@ -3,6 +3,19 @@ html, body {
     padding: 0px;
     height: 100%;
     text-align: center;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #494949;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #eaf078;
 }
 
 section {
@@ -74,11 +87,48 @@ hr {
 
 /**Navbar**************************/
 
-#navbar {
+/*#navbar {
     z-index: 1;
     position: fixed;
+    width: 5rem;
+    height: 100vh;
+    background-color: #494949;
 }
 
+.navabar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color:#eaf078;
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}*/
 
 /*HOME*****************************/
 
@@ -94,14 +144,14 @@ hr {
     margin: 120px auto 0 auto;
     font-size: 110px;
     color: #eaf078;
-    text-shadow: 5px 5px rgba(83, 94, 31, 0.404);
+    text-shadow: 5px 5px 5px rgba(83, 94, 31, 0.404);
 }
 
 #home h2 {
     margin: 0 auto 0 auto;
     font-size: 25px; 
     color: #d6db74;
-    text-shadow: 2px 2px rgba(122, 120, 113, 0.411);   
+    text-shadow: 5px 5px 5px rgba(122, 120, 113, 0.411);   
 }
 
 #home img {
