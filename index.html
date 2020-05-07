@@ -6,26 +6,136 @@
           <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
           <meta charset="UTF-8">
-          <style>
-            @import url('./base.css');
-            @import url('./basic-grid.css');
-          </style>
+          <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--für responsive website-->
+          <script src="https://kit.fontawesome.com/6c3db34da7.js" crossorigin="anonymous"></script> <!--Skript für Icons; im head, da sonst NAVBAR beim laden komisch-->
+          <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700&family=Manrope:wght@642&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+
         </head>
 
         <body>
-          <div class="container">
+          <div id="container">
             
-            <nav id="navbar"></nav>
-            <section class="landingpage"></section>
-            <section class="intro"></section>
-            <section class="procon"></section>
-            <section class="legal"></section>
-            <section class="gedankenexperiment"></section>
-            <section  class="schlussfolgerung"></section>
-            <section class="studie"></section>
-            <section class="rückblick"></section>
-            <footer class="footer"></footer>
+            <nav id="navbar">
+              <ul>
+                <li>
+                  <a href="#landingpage">
+                    <i id="homeicon" class="fas fa-home"></i>
+                  </a>
+                </li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#procon">Pros and Cons</a></li>
+                <li><a href="#legal">Legal</a></li>
+                <li class="dropbtn"><a href="#gedankenexperiment">Thought Experiment</a></li>
+                  <div class="dropdown-content">
+                    <a href="#geankenexperiment1"></a>
+                    <a href="#geankenexperiment2"></a>
+                    <a href="#geankenexperiment3"></a>
+                    <a href="#geankenexperiment4"></a>
+                    <a href="#geankenexperiment5"></a>
+                    <a href="#geankenexperiment6"></a>
+                    <a href="#geankenexperiment7"></a>
+                    <a href="#geankenexperiment8"></a>
+                    <a href="#geankenexperiment9"></a>
+                    <a href="#geankenexperiment10"></a>
+                    <a href="#geankenexperiment11"></a>
+                    <a href="#geankenexperiment12"></a>
+                  </div>
+                <li><a href="#schlussfolgerung">Deduction</a></li>
+                <li><a href="#studie">Comparison To a Study</a></li>
+                <li><a href="#rückblick">Review</a></li>
+                
+              </ul>
+            </nav>
+            <!--LANDING-->
+            <section id="landingpage">
+              <h1>Self Driving Cars</h1>
+              <a href="#intro">
+                <img src="img/pfeil.PNG"alt="Pfeil">
+              </a>
+            </section>
+              <!--INTRO-->
+            <section id="intro">
+              <div class="container">
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LhgWcmA8yFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="text">
+                  <p>Im Rahmen eines Abschlussprojekts im Fach Philosophie werden wir uns mit der Problematik von selbstfahrenden Autos befassen. Während unserem Projekt werden wir 5 verschiedene, aber trotzdem ähnliche Gedankenexperimente erfinden. Im Rahmen einer Umfrage werden wir die Teilnehmer nach ihrer Meinung zu den vorgestellten Gedankenexperimente fragen. Mithilfe dieser Ergebnisse werden wir ableiten, nach welchen Prinzipien selbstfahrende Autos programmiert werden sollen. Diese Resultate und Daten werden auf einer selbstgemachten Webseite vorgestellt. Im Anschluss an die Schlussfolgerung werden wir unsere Resultate mit denen von international angelegten Studien vergleichen und zum Ende ein Schlussfazit ziehen. 
+                  <br>
+                  Selbstfahrende Autos versprechen im Strassenverkehr eine höhere Sciherheit als manuell gefahrene Autos. Doch auch selbstfahrende Autos können keine 100%ige Sicherheitsrate aufweisen, denn Kollisionen sind manchmal unausweichlich. Damit auch in diesem Fall möglichst viele Leben gerettet werden, müssen selbstfahrende Autos programmiert werden, in der Weise, dass sie auch in Szenarios in denen das Unfallrisiko sehr hoch ist, reagieren können.  
+                  <br>
+                  Doch ist die Programmierung von solchen KI’s nicht ein Abwägen von Menschenleben, das besonders in der heutigen Zeit so verpönt ist? 
+                  <br>
+                  Wenn wir dieses Problem mit anderen uns bekannten Problemen vergleichen, dann fällt auf, dass dieses Problem Ähnlichkeiten mit dem sogenannten Trolley-Problem aufweist. Wie dies schon der Autor Lin festgestellt hat. 
+                  </p>
+                </div>
+                <div class="quote">
+                  <p>
+                    <em>Of the most iconic thought-experiments in ethics is the trolley problem […] and this is one that may now occur in the real world, if autonomous vehicles come to be.</em>
+                    <br> 
+                    <str>-Lin, 2015</str> 
+                </div>
+              </div>
+            </section>
+              <!--PRO & CON-->
+            <section id="procon">
+              <div class="container">
+                <div class="grid-item">
+                  <h3>PRO</h3>
+                  <hr>
+                  <p>#</p>
+                </div>
+                <div class="grid-item">
+                  <h3>CON</h3>
+                  <hr>
+                  <p>#</p>
+                </div>
+              </div>
+            </section>
+              <!--Rechtliches-->
+            <section id="legal">
+              <h3>Rechtliches</h3>
+              <hr>
+              <p>Selbstfahrende Autos sind eine Neuheit, welche man bald im Schweizer Strassenverkehr antreffen werden kann. Natürlich ist auch diese Art von Autos nicht perfekt und kann Unfälle verursachen (wie in den Szenarios). Da jedoch kein Fahrer in den Autos ist, fragt sich nun, wen denn die Schuld trifft, wenn mal etwas mit solchen Autos passiert? Die Rechtliche Lage zu selbstfahrenden Autos ist momentan noch fast nicht erörtert und somit sehr harsch zu den Haltern von selbstfahrenden Autos. Das Schweizer Verkehrsgesetz besagt beispielsweise, dass das Entfernen der Hände vom Steuer eines Autos (egal was für eins) nicht gestattet und strafbar sei, obwohl dies nur bei manuell gesteuerten Autos zu einer Gefahr auf der Strasse werden kann. Auch besagt das Strassenverkehrsgesetz, dass jegliche Schäden die von einem fahrerlosen Auto ausgehen (also auch überfahrene Personen, wie in den Szenarios) mit vollem Schadenersatz und Haftung auf den Halter des fahrerlosen/selbstfahrenden Autos gehen. Das Schweizer Gesetz ist kurzgefasst einfach noch nicht auf Selbstfahrende Autos angepasst worden, obwohl es das in der Zukunft definitiv werden sollte.</p>
+            </section>
+              <!--Gdankenexperimente-->
+            <section id="gedankenexperiment">
+              <div class="container">
+                <div><a href="Gedankenexperiment-1.html"><img src="./img/Icon_1.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 1"></a>
+                <a href="Gedankenexperiment-2.html"><img src="./img/Icon_2.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 2"></a>
+                <a href="Gedankenexperiment-3.html"><img src="./img/Icon_3.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 3"></a>
+                <a href="Gedankenexperiment-4.html"><img src="./img/Icon_4.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 4"></a>
+                <a href="Gedankenexperiment-5.html"><img src="./img/Icon_5.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 5"></a>
+                <a href="Gedankenexperiment-6.html"><img src="./img/Icon_6.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 6"></a>
+                <a href="Gedankenexperiment-7.html"><img src="./img/Icon_7.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 7"></a>
+                <a href="Gedankenexperiment-8.html"><img src="./img/Icon_8.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 8"></a>
+                <a href="Gedankenexperiment-9.html"><img src="./img/Icon_9.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 9"></a>
+                <a href="Gedankenexperiment-10.html"><img src="./img/Icon_10.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 10"></a>
+                <a href="Gedankenexperiment-11.html"><img src="./img/Icon_11.PNG" class="gedankenexperiment-card" alt="Gedankenexperiment 11"></a>
+              </div>
+            </section>
+              <!--Schlussfolgerung-->
+            <section  id="schlussfolgerung">
+              <h3>Schlussfolgerung</h3>
+              <hr>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim suscipit necessitatibus quibusdam, quae officiis rem iusto sequi maiores et, deserunt eveniet consectetur perferendis ratione cumque nobis temporibus ad impedit?</p>
+            </section>
+              <!--Vergleich mit einer Studie-->
+            <section id="studie">
+              <h3>Vergleich mit einer Studie</h3>
+              <hr>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim suscipit necessitatibus quibusdam, quae officiis rem iusto sequi maiores et, deserunt eveniet consectetur perferendis ratione cumque nobis temporibus ad impedit?</p>
+            </section>
+              <!-- Rückblick auf unser Arbeitsvehalten-->
+            <section id="rückblick">
+              <h3>Rückblick auf unser Projekt</h3>
+              <hr>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim suscipit necessitatibus quibusdam, quae officiis rem iusto sequi maiores et, deserunt eveniet consectetur perferendis ratione cumque nobis temporibus ad impedit?</p>
+            </section>
+              <!--Footer-->
+            <footer id="footer"></footer>
         </div>
-            
+
+        
         </body>
     </html>
