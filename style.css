@@ -6,12 +6,12 @@
 }
 /*generelle Einstellungen für body*/
 body {padding: 0; margin: 0; list-style: none; scroll-behavior: smooth;}
-section {height: 100vh; padding-top: 5rem;}
+section {min-height: 100vh; padding-top: 5rem;}
 /*Scrollbar Chrome, Safari und Opera*/
 body::-webkit-scrollbar {width: 0.3rem;} 
 body::-webkit-scrollbar-track {background: var(--black);}
 body::-webkit-scrollbar-thumb {background: var(--green);}
-::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons beio der scrollbar deaktivieren*/
+::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons bei der scrollbar deaktivieren*/
 
 /*Trennungslinie*/
 hr {
@@ -122,7 +122,6 @@ li a:hover {
     border-radius: .3em;
 }
 #intro div.vid iframe {
-    
     box-shadow: 0 0 3rem rgba(234, 240, 120, .3);
 }
 
