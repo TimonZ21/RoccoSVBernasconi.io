@@ -1,12 +1,172 @@
-body {
+/*root*/
+:root {
+    font-size: 10px;
+    --green: #eaf078;
+    --black: #494949;
+}
+/*generelle Einstellungen für body*/
+body {padding: 0; margin: 0; list-style: none; scroll-behavior: smooth;}
+section {height: 100vh; padding-top: 5rem;}
+/*Scrollbar Chrome, Safari und Opera*/
+body::-webkit-scrollbar {width: 0.3rem;} 
+body::-webkit-scrollbar-track {background: var(--black);}
+body::-webkit-scrollbar-thumb {background: var(--green);}
+::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons beio der scrollbar deaktivieren*/
+
+/*Trennungslinie*/
+hr {
+    width: 30px;
+    height: 3px;
+    background: var(--black);
+    border: 0px;
+    margin: 0 auto 40px auto;
+}
+
+/*andere Farbe wenn Text markiert wird*/
+::selection {
+    color: var(--black);
+    background: var(--green);
+}
+::-moz-selection { 
+    color: var(--black);
+    background: var(--green);
+}
+/*NAVBAR*********************************************/
+
+#navbar ul {
+    height: 5rem;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: rgb(65, 65, 65);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+#navbar li {float: right;}
+#navbar li a {
+    display: block;
+    height: 4rem;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
 
+/* Change the link color to #eaf078 on hover */
+li a:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+/***************************************************/
+/*Landing Page**************************************/
+#landingpage {
+    background-image: url(./img/landing2.jpg);
+    background-size: cover;
+    
+}
 
-.landingpage {
+#landingpage h1 {
+    text-align: center;
+    padding-top: 34rem;
+    color: var(--green);
+    font-size: 8.5rem;
+    font-family: 'Hepta Slab', serif;
+    text-transform: capitalize;
+}
+
+#landingpage img {
+    display: block;
+    margin: 31rem auto 0 auto;
+    opacity: 0.8;
+}
+
+#landingpage img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+}
+/***************************************************/
+/*Intro*********************************************/
+#intro {
+    background-image: linear-gradient(#353535, var(--black));
+    /*background-image: linear-gradient(#353535, var(--black), rgba(79, 79, 79, 1), rgba(79, 79, 79, .8), rgba(79, 79, 79, .6));*/
+    color: var(--green);
+
+}
+#intro div.container {
+    padding: 0 25rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+        "video   text"
+        "quote   quote";
     height: 100vh;
-    background: url(./img/landing.jpg);
+}
+
+#intro div.vid {
+    margin: 35% auto 0 0;
+    border-radius: .3em;
+}
+#intro div.vid iframe {
+    box-shadow: 0 0 3rem rgba(234, 240, 120, .3);
+}
+
+#intro div.text {
+    font-size: 1.6rem;
+    margin: 33% auto 0 0;
+}
+
+#intro div.quote{
+    grid-area: quote;
+    margin: auto;
+    margin-bottom: 9rem;
+    font-size: 2.1rem;
+    text-align: right;
+    text-shadow: 0 .2rem .8px var(--black);
+    border: .2rem solid rgba(73, 73, 73, .2);
+    background-color: rgba(73, 73, 73, .2);
+}
+   
+/***************************************************/
+/*PROCON********************************************/
+#procon {
+    background-image: url(./img/halfnhalf.png);
     background-size: cover;
 }
+/*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
+/*Legal*********************************************/
+    #legal {
+        background-image: linear-gradient(var(--green), rgba(234, 240, 120, .5));
+    }
+/***************************************************/
+
+/*Gedankenexperimente*/
+#gedankenexperiment div.container {
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(autofit minmax(250px, 1fr));
+    background-color: pink;
+}
+
+/*hervorheben des Inhalt*/
+.gedankenexperiment-card {
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
