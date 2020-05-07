@@ -13,14 +13,14 @@ body::-webkit-scrollbar-track {background: var(--black);}
 body::-webkit-scrollbar-thumb {background: var(--green);}
 ::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons bei der scrollbar deaktivieren*/
 
-/*Trennungslinie*/
+/*Trennungslinie
 hr {
     width: 30px;
     height: 3px;
     background: var(--black);
     border: 0px;
     margin: 0 auto 40px auto;
-}
+}*/
 
 /*andere Farbe wenn Text markiert wird*/
 ::selection {
@@ -31,6 +31,9 @@ hr {
     color: var(--black);
     background: var(--green);
 }
+h1, h2, h3, h4{font-family: 'Share Tech Mono', monospace;}
+p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
+    /*font-family: 'Share Tech Mono', monospace;*/}
 /*NAVBAR*********************************************/
 
 #navbar ul {
@@ -76,7 +79,7 @@ li a:hover {
     padding-top: 34rem;
     color: var(--green);
     font-size: 8.5rem;
-    font-family: 'Hepta Slab', serif;
+    /*font-family: 'Hepta Slab', serif;*/
     text-transform: capitalize;
 }
 
@@ -126,6 +129,7 @@ li a:hover {
 }
 
 #intro div.text {
+    color: rgb(204, 209, 105);
     font-size: 1.6rem;
     margin: 33% auto 0 0;
 }
@@ -133,12 +137,13 @@ li a:hover {
 #intro div.quote{
     grid-area: quote;
     margin: auto;
-    margin-bottom: 9rem;
+    margin-bottom: 13rem;
+    color: rgb(204, 209, 105);
     font-size: 2.1rem;
     text-align: right;
     text-shadow: 0 .2rem .8px var(--black);
-    border: .2rem solid rgba(73, 73, 73, .2);
-    background-color: rgba(73, 73, 73, .2);
+    border: .2rem solid rgba(168, 168, 168, .08);
+    background-color: rgba(168, 168, 168, .08);
 }
    
 /***************************************************/
@@ -147,26 +152,118 @@ li a:hover {
     background-image: url(./img/halfnhalf.png);
     background-size: cover;
 }
+#procon div.container {
+    padding: 0 25rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "con pro";
+    height: 100vh;
+}
+#procon div.container div{
+    margin: 10rem 0 0 0;
+}
+#procon div.container div.con h3{
+    font-size: 2.1rem;
+    color: var(--green);
+    text-transform: uppercase;
+}
+#procon div.container div.pro h3{
+    font-size: 2.1rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+#procon div.container div hr {
+    width: 30rem;
+    height: .3rem;
+    float: left;
+    margin-top: -2rem;
+}
+#procon div.container div.con hr{
+    background-color: var(--green);
+}
+#procon div.container div.pro hr{
+    background-color: var(--black);
+}
+#procon div.container div.con h4{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    color: var(--green);
+}
+#procon div.container div.pro h4{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    color: var(--black);
+}
+#procon div.container div.con p.argument{
+    font-size: 1.6rem;
+    margin: 0 0 1rem 4rem;
+    color: var(--green);
+}
+#procon div.container div.pro p.argument{
+    font-size: 1.6rem;
+    margin: 0 0 1rem 4rem;
+    color: var(--black);
+}
 /*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
 /*Legal*********************************************/
-    #legal {
-        background-image: linear-gradient(var(--green), rgba(234, 240, 120, .5));
-    }
-/***************************************************/
+#legalandgedankenexperiment {
+    padding: 10rem 25rem 0 25rem;
+    background-color: var(--green);
+}    
+#legalandgedankenexperiment hr{
+    background-color: var(--black);
+    height: .3rem;
+    margin-top: -2rem;
+}
+#rechtliches {
+    padding-top: 5rem;
+    text-align: right;
+}
+#rechtliches h3 {
+    margin-right: 3rem;
+    font-size: 2.1rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+/************************background-image: url(./img/landing_page.png);
+    background-size: cover;***************************/
 
 /*Gedankenexperimente*/
+#gedankenexperiment {
+    padding-top: 5rem;
+}
+#gedankenexperiment h3{
+    margin-top: 15rem;
+    font-size: 2.1rem;
+    color: var(--black);
+}
+#gedankenexperiment h4{
+    margin: 0;
+    font-size: 2rem;
+    color: var(--black);
+}
 #gedankenexperiment div.container {
     padding: 3em;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(autofit minmax(250px, 1fr));
-    background-color: pink;
 }
-
+#gedankenexperiment ul {
+    margin-left: 4rem;
+}
 /*hervorheben des Inhalt*/
 .gedankenexperiment-card {
     padding: 2em;
     border-radius: .3em;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
-
+/***************************************************/
+/*Schlussfolgerung**********************************/
+    #schlussfolgerung {
+        background-image: url(./img/result.jpg);
+        background-size: cover;
+    }
+/***************************************************/
