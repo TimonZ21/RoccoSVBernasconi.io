@@ -268,7 +268,7 @@ li a:hover {
 #gedankenexperiment ul li {padding-top: 0.3rem;}
 
 #gedankenexperiment i.fa-birthday-cake:hover, i.fa-user-shield:hover, i.fa-users:hover {
-    ransform: scale(1.5);
+    transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
