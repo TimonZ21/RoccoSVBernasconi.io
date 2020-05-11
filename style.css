@@ -1,26 +1,24 @@
 /*root*/
 :root {
     font-size: 10px;
+    font-size: .53vw;
     --green: #eaf078;
     --black: #494949;
+    scroll-behavior: smooth;
 }
 /*generelle Einstellungen für body*/
-body {padding: 0; margin: 0; list-style: none; scroll-behavior: smooth;}
-section {min-height: 100vh; padding-top: 5rem;}
+body {display: flex;
+    flex-direction: column;
+    padding: 0; margin: 0; list-style: none;}
+body div.container {
+    flex: 1;
+}
+section {height: 100vh;  padding-top: 5rem;}
 /*Scrollbar Chrome, Safari und Opera*/
 body::-webkit-scrollbar {width: 0.3rem;} 
 body::-webkit-scrollbar-track {background: var(--black);}
 body::-webkit-scrollbar-thumb {background: var(--green);}
 ::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons bei der scrollbar deaktivieren*/
-
-/*Trennungslinie
-hr {
-    width: 30px;
-    height: 3px;
-    background: var(--black);
-    border: 0px;
-    margin: 0 auto 40px auto;
-}*/
 
 /*andere Farbe wenn Text markiert wird*/
 ::selection {
@@ -71,7 +69,6 @@ li a:hover {
 #landingpage {
     background-image: url(./img/landing2.jpg);
     background-size: cover;
-    
 }
 
 #landingpage h1 {
@@ -120,11 +117,18 @@ li a:hover {
     height: 100vh;
 }
 
-#intro div.vid {
-    margin: 35% auto 0 0;
-    border-radius: .3em;
+#intro div.vid{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
 }
+
 #intro div.vid iframe {
+    position: absolute;
+    margin: 35% auto 0 0;
+    width: 80%;
+    height: 80%;
     box-shadow: 0 0 3rem rgba(234, 240, 120, .3);
 }
 
@@ -151,6 +155,12 @@ li a:hover {
 #procon {
     background-image: url(./img/halfnhalf.png);
     background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "black green";/*löst das Problem mit dem Hintergrund (ist zentriert)*/
 }
 #procon div.container {
     padding: 0 25rem;
@@ -209,11 +219,11 @@ li a:hover {
 }
 /*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
 /*Legal*********************************************/
-#legalandgedankenexperiment {
+#legal-gedankenexperiment-footer {
     padding: 10rem 25rem 0 25rem;
     background-color: var(--green);
 }    
-#legalandgedankenexperiment hr{
+#legal-gedankenexperiment-footer hr{
     background-color: var(--black);
     height: .3rem;
     margin-top: -2rem;
@@ -253,6 +263,19 @@ li a:hover {
 }
 #gedankenexperiment ul {
     margin-left: 4rem;
+    color: var(--black);
+}
+#gedankenexperiment ul li {padding-top: 0.3rem;}
+
+#gedankenexperiment i.fa-birthday-cake:hover, i.fa-user-shield:hover, i.fa-users:hover {
+    ransform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
 }
 /*hervorheben des Inhalt*/
 .gedankenexperiment-card {
@@ -262,8 +285,27 @@ li a:hover {
 }
 /***************************************************/
 /*Schlussfolgerung**********************************/
-    #schlussfolgerung {
-        background-image: url(./img/result.jpg);
-        background-size: cover;
-    }
+#schlussfolgerung {
+    background-image: url(./img/result.jpg);
+    background-size: cover;
+}
+/***************************************************/
+/*footer********************************************/
+#footer {
+    padding-bottom: -6vh;
+    height:6vh;
+    background-color: rgb(65, 65, 65);
+}
+#footer ul {
+    height: 6vh;
+    list-style-type: none;
+    width: 100%;
+}
+#footer ul li {
+    display: inline ;
+    color: var(--green);
+    font-family: serif;
+    margin: auto;
+    padding: 1.4rem 1.6rem;
+}
 /***************************************************/
