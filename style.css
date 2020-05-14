@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb {background: var(--green);}
     text-shadow: none;
 }
 h1, h2, h3, h4{font-family: 'Share Tech Mono', monospace;}
+h3 {margin-right: 3rem;font-size: 2.1rem;color: var(--black);text-transform: uppercase;}
 p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
     /*font-family: 'Share Tech Mono', monospace;*/}
     hr {border-radius: 5px;}
@@ -177,15 +178,8 @@ li a:hover {
 #procon div.container div{
     margin: 10rem 0 0 0;
 }
-#procon div.container div.con h3{
-    font-size: 2.1rem;
+#procon div.container div.con h3 {
     color: var(--green);
-    text-transform: uppercase;
-}
-#procon div.container div.pro h3{
-    font-size: 2.1rem;
-    color: var(--black);
-    text-transform: uppercase;
 }
 #procon div.container div hr {
     width: 30rem;
@@ -237,12 +231,6 @@ li a:hover {
     padding-top: 5rem;
     text-align: right;
 }
-#rechtliches h3 {
-    margin-right: 3rem;
-    font-size: 2.1rem;
-    color: var(--black);
-    text-transform: uppercase;
-}
 /************************background-image: url(./img/landing_page.png);
     background-size: cover;***************************/
 
@@ -252,8 +240,6 @@ li a:hover {
 }
 #gedankenexperiment h3{
     margin-top: 15rem;
-    font-size: 2.1rem;
-    color: var(--black);
 }
 #gedankenexperiment h4{
     margin: 0;
@@ -298,3 +284,12 @@ li a:hover {
 /*footer********************************************/
 
 /***************************************************/
+/*Gedankenexperimente**********************************************************************************/
+h3.vertical {
+    writing-mode: vertical-lr;
+}    
+img {
+        max-width: 630px;
+    }
+
+/******************************************************************************************************/
