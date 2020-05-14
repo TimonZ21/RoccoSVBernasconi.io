@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    font-size: 10px;
+    /*font-size: 10px;****alte fs für use mit rem****/
     font-size: .53vw;
     --green: #eaf078;
     --black: #494949;
@@ -19,19 +19,21 @@ body::-webkit-scrollbar {width: 0.3rem;}
 body::-webkit-scrollbar-track {background: var(--black);}
 body::-webkit-scrollbar-thumb {background: var(--green);}
 ::-webkit-scrollbar-button {overflow: hidden;;} /*sollte die buttons bei der scrollbar deaktivieren*/
-
 /*andere Farbe wenn Text markiert wird*/
 ::selection {
     color: var(--black);
-    background: var(--green);
+    background: rgb(189, 194, 97);
+    text-shadow: none;
 }
 ::-moz-selection { 
     color: var(--black);
-    background: var(--green);
+    background: rgb(189, 194, 97);
+    text-shadow: none;
 }
 h1, h2, h3, h4{font-family: 'Share Tech Mono', monospace;}
 p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
     /*font-family: 'Share Tech Mono', monospace;*/}
+    hr {border-radius: 5px;}
 /*NAVBAR*********************************************/
 
 #navbar ul {
@@ -130,6 +132,7 @@ li a:hover {
     width: 80%;
     height: 80%;
     box-shadow: 0 0 3rem rgba(234, 240, 120, .3);
+    border-radius: 0.6rem;
 }
 
 #intro div.text {
@@ -149,7 +152,6 @@ li a:hover {
     border: .2rem solid rgba(168, 168, 168, .08);
     background-color: rgba(168, 168, 168, .08);
 }
-   
 /***************************************************/
 /*PROCON********************************************/
 #procon {
@@ -187,14 +189,16 @@ li a:hover {
 }
 #procon div.container div hr {
     width: 30rem;
-    height: .3rem;
+    height: .4rem;
     float: left;
     margin-top: -2rem;
 }
 #procon div.container div.con hr{
+    border: var(--green);
     background-color: var(--green);
 }
 #procon div.container div.pro hr{
+    border: var(--black);
     background-color: var(--black);
 }
 #procon div.container div.con h4{
@@ -219,13 +223,14 @@ li a:hover {
 }
 /*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
 /*Legal*********************************************/
-#legal-gedankenexperiment-footer {
+#legal-gedankenexperiment {
     padding: 10rem 25rem 0 25rem;
     background-color: var(--green);
-}    
-#legal-gedankenexperiment-footer hr{
+} 
+#legal-gedankenexperiment hr{
+    border: var(--black);
     background-color: var(--black);
-    height: .3rem;
+    height: .4rem;
     margin-top: -2rem;
 }
 #rechtliches {
@@ -291,21 +296,5 @@ li a:hover {
 }
 /***************************************************/
 /*footer********************************************/
-#footer {
-    padding-bottom: -6vh;
-    height:6vh;
-    background-color: rgb(65, 65, 65);
-}
-#footer ul {
-    height: 6vh;
-    list-style-type: none;
-    width: 100%;
-}
-#footer ul li {
-    display: inline ;
-    color: var(--green);
-    font-family: serif;
-    margin: auto;
-    padding: 1.4rem 1.6rem;
-}
+
 /***************************************************/
