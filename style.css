@@ -30,8 +30,9 @@ body::-webkit-scrollbar-thumb {background: var(--green);}
     background: rgb(189, 194, 97);
     text-shadow: none;
 }
-h1, h2, h3, h4{font-family: 'Share Tech Mono', monospace;}
-h3 {margin-right: 3rem;font-size: 2.1rem;color: var(--black);text-transform: uppercase;}
+h1, h2, h3, h4{font-family: 'Share Tech Mono', monospace; text-transform: uppercase;}
+h1 {text-align: center;font-size: 8.5rem;}
+h3 {margin-right: 3rem;font-size: 2.1rem;color: var(--black);}
 p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
     /*font-family: 'Share Tech Mono', monospace;*/}
     hr {border-radius: 5px;}
@@ -75,9 +76,7 @@ li a:hover {
 }
 
 #landingpage h1 {
-    text-align: center;
     padding-top: 34rem;
-    color: var(--green);
     font-size: 8.5rem;
     /*font-family: 'Hepta Slab', serif;*/
     text-transform: capitalize;
@@ -285,11 +284,37 @@ li a:hover {
 
 /***************************************************/
 /*Gedankenexperimente**********************************************************************************/
-h3.vertical {
-    writing-mode: vertical-lr;
+section.gedankenexperiment-gird {
+    display: grid;
+    grid-template-columns: 1fr 8fr 6fr;
+    grid-template-rows: 5rem 9fr 1fr;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "h1 main         img"
+        "h1 previousnext previousnext";
+    height: 100vh;
+}
+div.h1 {
+    grid-area: h1;
+    font-size: 7rem;
+    writing-mode: vertical-lr; /*vertikal asugerichteter Titel*/
+    background-color: darkorange;
 }    
-img {
-        max-width: 630px;
+h1.vertical-over-nine {padding-top: 7.6vh;} /*wenn Nummer des GE über 9, ergo 2 Ziffern hat, braucht der Titel meh Raum*/
+main {
+    grid-area: main;
+    background-color: cornflowerblue;
+}
+div.img {
+    grid-area: img;
+    background-color: green;
     }
+div.img img {
+    width: 50%;
+}
+footer {
+    grid-area: previousnext;
+    background-color: bisque;
+}
 
 /******************************************************************************************************/
