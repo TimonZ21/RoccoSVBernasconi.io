@@ -80,6 +80,7 @@ li a:hover {
 #landingpage h1 {
     padding-top: 34rem;
     font-size: 8.5rem;
+    color: var(--green);
     /*font-family: 'Hepta Slab', serif;*/
     text-transform: capitalize;
 }
