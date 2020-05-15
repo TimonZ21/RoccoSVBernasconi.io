@@ -231,8 +231,9 @@ li a:hover {
 }
 #rechtliches {
     padding-top: 5rem;
-    text-align: right;
+    text-align: justify;
 }
+#rechtliches h3 {text-align: right;}
 /************************background-image: url(./img/landing_page.png);
     background-size: cover;***************************/
 
