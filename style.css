@@ -40,7 +40,7 @@ p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
     /*font-family: 'Share Tech Mono', monospace;*/}
 hr {border-radius: 5px;}
 /*NAVBAR*********************************************/
-
+#navbar {z-index: 99;}
 #navbar ul {
     height: 5rem;
     list-style-type: none;
