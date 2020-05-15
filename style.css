@@ -52,7 +52,8 @@ p, li{font-size: 1.6rem; font-family: 'Share Tech Mono', monospace;
     top: 0;
     width: 100%;
 }
-#navbar li {float: right;}
+#navbar li {float: left;}
+#navbar li:last-child {float: right;}
 #navbar li a {
     display: block;
     height: 4rem;
@@ -288,12 +289,11 @@ li a:hover {
 section.gedankenexperiment-gird {
     display: grid;
     grid-template-columns: 1fr 8fr 6fr;
-    grid-template-rows: 5rem 9fr 1fr;
-    grid-template-areas: 
-        "navbar navbar navbar"
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas:
         "h1 main         img"
         "h1 previousnext previousnext";
-    height: 100vh;
+    height: calc(100vh -5rem);
 }
 div.h1 {
     grid-area: h1;
