@@ -5,6 +5,7 @@
     --green: #eaf078;
     --black: #494949;
     scroll-behavior: smooth;
+    cursor: url(f6cf), auto;
 }
 /*generelle Einstellungen für body*/
 body {display: flex;
@@ -296,8 +297,8 @@ section.gedankenexperiment-gird {
 }
 div.h1 {
     grid-area: h1;
-    font-size: 7rem;
-    writing-mode: vertical-lr; /*vertikal asugerichteter Titel*/
+    font-size: 6rem;
+    writing-mode: vertical-lr; /*vertikal ausgerichteter Titel*/
     background-color: darkorange;
 }    
 h1.vertical-over-nine {padding-top: 7.6vh;} /*wenn Nummer des GE über 9, ergo 2 Ziffern hat, braucht der Titel meh Raum*/
