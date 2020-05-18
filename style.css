@@ -337,6 +337,9 @@ main {
     grid-area: main;
     background-color: cornflowerblue;
 }
+#result {display: none;}
+#answer1 {display: inline; padding-right: 10%;}
+#answer2 {display: inline;}
 div.img {
     grid-area: img;
     background-color: green;
