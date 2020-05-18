@@ -233,7 +233,7 @@ hr {border-radius: 5px;}
 /*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
 /*Legal*********************************************/
 #legal-gedankenexperiment {
-    padding: 10% 25rem 5% 25rem;
+    padding: 8% 25rem 5% 25rem;
     background-color: var(--green);
     height: fit-content;
 } 
@@ -284,6 +284,17 @@ hr {border-radius: 5px;}
     -webkit-transition: 200ms;
     -moz-transition: 200ms;
     -o-transition: 200ms;
+}
+#gedankenexperiment a {
+    float: right;
+    padding: 2rem 2.5rem;
+    margin-top: 1%;
+    margin-right: 2%;
+    color: var(--black);
+    background-color: linear-gradient(blue, green);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
 }
 /*hervorheben des Inhalt*/
 /*.gedankenexperiment-card {
