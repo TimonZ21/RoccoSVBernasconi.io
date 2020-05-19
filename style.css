@@ -275,7 +275,7 @@ hr {border-radius: 5px;}
 }
 #gedankenexperiment ul li {padding-top: 0.3rem;}
 
-#gedankenexperiment i.fa-birthday-cake:hover, i.fa-user-shield:hover, i.fa-users:hover {
+i.fa-birthday-cake:hover, i.fa-user-shield:hover, i.fa-users:hover {  /*keine id vorne bc auch in Gedankenexperimente (subsite) verwendet wird*/
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -307,13 +307,48 @@ hr {border-radius: 5px;}
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }*/
 /***************************************************/
+/*Gedankenexperimente*******************************/
+section.gedankenexperiment-resultate {
+    height: min-content;
+    background-image: url(./img/Justiciacropped.webp);
+    background-size: cover;
+    overflow: hidden;
+    padding: 5rem 25% 7% 25%;
+    color: var(--green);
+    text-align: justify;
+}
+section.gedankenexperiment-resultate div.background {
+    background-color: rgba(73, 73, 73, .8);
+    padding: 3%;
+}
+section.gedankenexperiment-resultate h1 {
+    float: right;
+    margin-top: 2%;
+    font-size: 4rem;
+    writing-mode: vertical-lr; /*vertikal ausgerichteter Titel*/  
+}
+section.gedankenexperiment-resultate img {
+    width: 80%;
+    border-style: groove;
+    border-color: var(--black);
+    margin-bottom: 5%;
+}
+section.gedankenexperiment-resultate footer {
+    margin: 5% 0 2% 2%;
+}
+section.gedankenexperiment-resultate footer a i {
+    color: var(--green);
+    font-size: 3.5rem;
+}
+section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
+/***************************************************/
 /*Schlussfolgerung**********************************/
 #schlussfolgerung {
     background-size: cover;
     background-color: var(--black);
     color: var(--darker-green);
     padding: 8rem 25% 7% 25%;
-    height: fit-content;
+    height: fit-content; /*funktioniert bei FireFox nixht! (hier sowohl auch in legal-gedankenexperiment)*/
 }
 #schlussfolgerung h2, h3 {color: var(--green);}
 #schlussfolgerung hr {
@@ -327,44 +362,21 @@ hr {border-radius: 5px;}
 /***************************************************/
 /*Rückblick*****************************************/
 #rückblick {
-    height: fit-content;
+    background-size: cover;
+    background-color: var(--black);
+    color: var(--darker-green);
+    padding: 1rem 25% 7% 25%;
+    height: fit-content; 
+}
+#rückblick hr {
+    border: var(--green);
     background-color: var(--green);
+    height: .4rem;
+    margin-top: -2rem;
 }
+#rückblick h2 {
+    color: var(--green);
+    text-align: right;
+}
+#rückblick p {text-align: justify;}
 /***************************************************/
-/*Gedankenexperimente**********************************************************************************/
-section.gedankenexperiment-gird {
-    display: grid;
-    grid-template-columns: 1fr 8fr 6fr;
-    grid-template-rows: 9fr 1fr;
-    grid-template-areas:
-        "h1 main         img"
-        "h1 previousnext previousnext";
-    height: fit-content;
-}
-div.h1 {
-    grid-area: h1;
-    font-size: 6rem;
-    writing-mode: vertical-lr; /*vertikal ausgerichteter Titel*/
-    background-color: darkorange;
-}    
-h1.vertical-over-nine {padding-top: 7.6vh;} /*wenn Nummer des GE über 9, ergo 2 Ziffern hat, braucht der Titel meh Raum*/
-main {
-    grid-area: main;
-    background-color: cornflowerblue;
-}
-#result {display: none;}
-#answer1 {display: inline; padding-right: 10%;}
-#answer2 {display: inline;}
-div.img {
-    grid-area: img;
-    background-color: green;
-}
-div.img img {
-    width: 100%;
-}
-footer {
-    grid-area: previousnext;
-    background-color: bisque;
-}
-
-/******************************************************************************************************/
