@@ -384,6 +384,8 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
 
 
 @media screen and (max-width: 1080px) {
+    section {height: fit-content;}
+    #landingpage {height: 100vh;}
     #landingpage h1 {font-size: 17rem; margin-top: 70%;}
     #landingpage img {visibility: hidden;}
     
@@ -397,7 +399,7 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
             "text"
             "video"
             "quote";
-        height: 100vh;
+        height: fit-content;
     }
     
     #intro div.vid{
@@ -436,7 +438,7 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
         grid-template-areas:
             "con"
             "pro";
-        height: 100vh;
+        height: fit-content;
     }
     #procon div.container div{
         padding: 6rem 0 0 0;
@@ -562,24 +564,54 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
     }*/
     /***************************************************/
     /*Gedankenexperimente*******************************/
+    #navbar ul {
+        height: 10rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(65, 65, 65);
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #navbar li {float: left;}
+    #navbar li:last-child {float: right;}
+    #navbar li a {
+        font-size: 4rem;
+        display: block;
+        height: 10rem;
+        color: white;
+        text-align: center;
+        font-family: serif;
+        margin: auto;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+    }
+    
     section.gedankenexperiment-resultate {
         height: min-content;
         background-image: url(./img/Justiciacropped.webp);
         background-size: cover;
         overflow: hidden;
-        padding: 5rem 25% 7% 25%;
+        padding: 5rem 0 7% 0;
         color: var(--green);
         text-align: justify;
+        font-size: 5rem;
     }
+    section.gedankenexperiment-resultate p {font-size: 5rem;}
+
     section.gedankenexperiment-resultate div.background {
         background-color: rgba(73, 73, 73, .8);
         padding: 3%;
     }
     section.gedankenexperiment-resultate h1 {
-        float: right;
+        float: none;
         margin-top: 2%;
-        font-size: 4rem;
-        writing-mode: vertical-lr; /*vertikal ausgerichteter Titel*/  
+        font-size: 6rem;
+        writing-mode: inherit;
     }
     section.gedankenexperiment-resultate img {
         width: 80%;
@@ -587,12 +619,51 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
         border-color: var(--black);
         margin-bottom: 5%;
     }
+    section.gedankenexperiment-resultate li {font-size: 5rem;}
     section.gedankenexperiment-resultate footer {
         margin: 5% 0 2% 2%;
     }
     section.gedankenexperiment-resultate footer a i {
         color: var(--green);
-        font-size: 3.5rem;
+        font-size: 9rem;
     }
     section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
+    /*Schlussfolgerung**********************************/
+#schlussfolgerung {
+    background-size: cover;
+    background-color: var(--black);
+    color: var(--darker-green);
+    padding: 8rem 10% 7% 10%;
+    height: fit-content; /*funktioniert bei FireFox nixht! (hier sowohl auch in legal-gedankenexperiment)*/
+}
+#schlussfolgerung h2, h3 {color: var(--green); font-size: 6rem;}
+#schlussfolgerung hr {
+    border: var(--green);
+    background-color: var(--green);
+    height: .4rem;
+    margin-top: -2rem;
+}
+#schlussfolgerung p {text-align: justify; font-size: 5rem;}
+#schlussfolgerung strong {font-size: 5.5rem;}
+/***************************************************/
+/*Rückblick*****************************************/
+#rückblick {
+    background-size: cover;
+    background-color: var(--black);
+    color: var(--darker-green);
+    padding: 8rem 10% 7% 10%;;
+    height: fit-content; 
+}
+#rückblick p, h2 {
+    font-size: 5rem;}
+#rückblick hr {
+    border: var(--green);
+    background-color: var(--green);
+    height: .4rem;
+    margin-top: -2rem;
+}
+#rückblick h2 {
+    color: var(--green);
+    text-align: left;
+}
 }
