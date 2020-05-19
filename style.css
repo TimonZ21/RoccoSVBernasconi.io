@@ -380,3 +380,18 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
 }
 #rückblick p {text-align: justify;}
 /***************************************************/
+
+
+
+@media screen and (max-width: 600px) {
+    #navbar ul {
+        height: 15rem;
+        font-size: 8rem; 
+    }
+    #navbar li a {
+        font-size: 4rem; 
+        height: 8rem;
+        padding: 1.4rem 1.6rem;
+    } 
+    #landingpage h1 {font-size: calc(8.5rem*2);}
+}
