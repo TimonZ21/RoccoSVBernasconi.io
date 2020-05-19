@@ -383,15 +383,216 @@ section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
 
 
 
-@media screen and (max-width: 600px) {
-    #navbar ul {
-        height: 15rem;
-        font-size: 8rem; 
+@media screen and (max-width: 1080px) {
+    #landingpage h1 {font-size: 17rem; margin-top: 70%;}
+    #landingpage img {visibility: hidden;}
+    
+    #intro div.container {
+        padding: 0 10rem;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr .5fr;
+        grid-template-areas: 
+            "text"
+            "video"
+            "quote";
+        height: 100vh;
     }
-    #navbar li a {
-        font-size: 4rem; 
-        height: 8rem;
-        padding: 1.4rem 1.6rem;
+    
+    #intro div.vid{
+        position: relative;
+        width: 100%;
+        padding: 1% auto 5% auto;
+        height: 0;
+        z-index: 1;
+    }
+    
+    #intro div.vid iframe {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        box-shadow: 0 0 3rem rgba(234, 240, 120, .3);
+        border-radius: 0.6rem;
+    }
+    #intro p {font-size: 5rem;}
+
+    #procon {
+        padding: 0;
+        /*background-image: url(./img/halfnhalf.png);*/
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            "black"
+            "green";/*löst das Problem mit dem Hintergrund (ist zentriert)*/
+    }
+    #procon div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "con"
+            "pro";
+        height: 100vh;
+    }
+    #procon div.container div{
+        padding: 6rem 0 0 0;
+    }
+    #procon div.container div.con {background-color: var(--black); padding: 2%;}
+    #procon div.container div.pro {background-color: var(--green); padding: 2%;}
+    #procon div.container div.con h2 {color: var(--green);}
+    #procon div.container div h2 {font-size: 6rem;} 
+    #procon div.container div hr {
+        width: 30rem;
+        height: .4rem;
+        float: left;
+        margin-top: -2rem;
+    }
+    #procon div.container div.con hr{
+        border: var(--green);
+        background-color: var(--green);
+    }
+    #procon div.container div.pro hr{
+        border: var(--black);
+        background-color: var(--black);
+    }
+    #procon div.container div.con h4{
+        font-size: 5rem;
+        margin: 0 0 1rem 0;
+        color: var(--green);
+    }
+    #procon div.container div.pro h4{
+        font-size: 5rem;
+        margin: 0 0 1rem 0;
+        color: var(--black);
+    }
+    #procon div.container div.con p.argument{
+        font-size: 5rem;
+        margin: 0 0 1rem 4rem;
+        color: var(--darker-green);
+        text-align: justify;
+    }
+    #procon div.container div.pro p.argument{
+        font-size: 5rem;
+        margin: 0 0 1rem 4rem;
+        color: var(--black);
+        text-align: justify;
+    }
+    /*****************background-image: linear-gradient(rgba(79, 79, 79, .6), white, rgba(234, 240, 120, .5));**********************************/
+    /*Legal*********************************************/
+    #legal-gedankenexperiment {
+        padding: 15% 25rem 10% 25rem;
+        background-color: var(--green);
+        height: fit-content;
     } 
-    #landingpage h1 {font-size: calc(8.5rem*2);}
+    #legal-gedankenexperiment p {font-size: 5rem;}
+    #legal-gedankenexperiment h2 {font-size: 6rem; }
+    #legal-gedankenexperiment hr{
+        border: var(--black);
+        background-color: var(--black);
+        height: .4rem;
+    }
+    #rechtliches {
+        text-align: justify;
+    }
+    #rechtliches h2 {
+        text-align: left;
+        padding: 0 .7rem 0 0 ;
+        margin: 0;
+    }
+    /***************************************************/
+    /*Gedankenexperimente*******************************/
+    #gedankenexperiment {
+        padding-top: 5rem;
+    }
+    #gedankenexperiment h2{
+        margin: 15rem 0 0 0 ;
+    }
+    #gedankenexperiment h4{
+        margin: 0;
+        font-size: 5rem;
+        color: var(--black);
+    }
+    #gedankenexperiment div.container {
+        padding: 3em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(autofit minmax(250px, 1fr));
+    }
+    #gedankenexperiment ul {
+        margin-left: 4rem;
+        color: var(--black);
+    }
+    #gedankenexperiment ul li {padding-top: 0.3rem; font-size: 5rem;}
+    
+    i.fa-birthday-cake:hover, i.fa-user-shield:hover, i.fa-users:hover {  /*keine id vorne bc auch in Gedankenexperimente (subsite) verwendet wird*/
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transition: 200ms;
+        -webkit-transition: 200ms;
+        -moz-transition: 200ms;
+        -o-transition: 200ms;
+    }
+    
+    #gedankenexperiment a {
+        float: right;
+        padding: 2rem 2.5rem;
+        margin-top: 3%;
+        margin-right: 2%;
+        color: var(--green);
+        font-size: 6rem;
+        font-family: 'Share Tech Mono', monospace;
+        text-transform: uppercase;
+        background-color: var(--black);
+        box-shadow: 0 0 30px 8px rgb(255, 175, 189, .8);
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+    /*hervorheben des Inhalt*/
+    /*.gedankenexperiment-card {
+        padding: 2em;
+        border-radius: .3em;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    }*/
+    /***************************************************/
+    /*Gedankenexperimente*******************************/
+    section.gedankenexperiment-resultate {
+        height: min-content;
+        background-image: url(./img/Justiciacropped.webp);
+        background-size: cover;
+        overflow: hidden;
+        padding: 5rem 25% 7% 25%;
+        color: var(--green);
+        text-align: justify;
+    }
+    section.gedankenexperiment-resultate div.background {
+        background-color: rgba(73, 73, 73, .8);
+        padding: 3%;
+    }
+    section.gedankenexperiment-resultate h1 {
+        float: right;
+        margin-top: 2%;
+        font-size: 4rem;
+        writing-mode: vertical-lr; /*vertikal ausgerichteter Titel*/  
+    }
+    section.gedankenexperiment-resultate img {
+        width: 80%;
+        border-style: groove;
+        border-color: var(--black);
+        margin-bottom: 5%;
+    }
+    section.gedankenexperiment-resultate footer {
+        margin: 5% 0 2% 2%;
+    }
+    section.gedankenexperiment-resultate footer a i {
+        color: var(--green);
+        font-size: 3.5rem;
+    }
+    section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
 }
