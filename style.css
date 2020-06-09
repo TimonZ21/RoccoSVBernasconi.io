@@ -331,7 +331,6 @@ section.gedankenexperiment-resultate img {
     width: 80%;
     border-style: groove;
     border-color: var(--black);
-    margin-bottom: 5%;
 }
 section.gedankenexperiment-resultate footer {
     margin: 5% 0 2% 2%;
@@ -341,6 +340,8 @@ section.gedankenexperiment-resultate footer a i {
     font-size: 3.5rem;
 }
 section.gedankenexperiment-resultate footer a i:first-child {margin-right: 2%;}
+section.gedankenexperiment-resultate p.Einschub {padding-right: 12%; margin-bottom: 8%;}
+section.gedankenexperiment-resultate p.Einschub :last-child {margin-bottom: 0;}
 /***************************************************/
 /*Schlussfolgerung**********************************/
 #schlussfolgerung {
