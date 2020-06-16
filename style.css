@@ -361,6 +361,26 @@ section.gedankenexperiment-resultate p.Einschub :last-child {margin-bottom: 0;}
 #schlussfolgerung p {text-align: justify;}
 #schlussfolgerung strong {font-size: 1.7rem;}
 /***************************************************/
+/*Prognose******************************************/
+#prognose {
+    background-size: cover;
+    background-color: var(--black);
+    color: var(--darker-green);
+    padding: 1rem 25% 7% 25%;
+    height: fit-content; 
+}
+#prognose hr {
+    border: var(--green);
+    background-color: var(--green);
+    height: .4rem;
+    margin-top: -2rem;
+}
+#prognose h2 {
+    color: var(--green);
+    text-align: right;
+}
+#prognose p {text-align: justify;}
+/***************************************************/
 /*Rückblick*****************************************/
 #rückblick {
     background-size: cover;
@@ -377,7 +397,6 @@ section.gedankenexperiment-resultate p.Einschub :last-child {margin-bottom: 0;}
 }
 #rückblick h2 {
     color: var(--green);
-    text-align: right;
 }
 #rückblick p {text-align: justify;}
 /***************************************************/
